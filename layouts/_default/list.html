@@ -3,7 +3,13 @@
     <h1>{{ .Title }}</h1>
     <ul>
         {{ range .Pages }}
-            <li><a href="{{ .Permalink }}">{{ .Date.Format "2006-01-02" }} | {{ .Title }}</a></li>
+            <li>
+                <a href="{{ .Permalink }}">{{ .Date.Format "2006-01-02" }} | {{ .Title }}</a>
+                {{ .Content }}
+            </li>
+            <hr class="luisen-yellow">
+            <hr class="luisen-red">
+            <hr class="luisen-blue">
         {{ end }}
     </ul>
 </div>

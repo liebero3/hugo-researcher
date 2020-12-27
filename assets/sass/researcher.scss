@@ -6,14 +6,15 @@ $y-medium: 1.0rem;
 
 // Placeholders
 %link-default {
-    color: $red;
+    color: $lured !important;
     text-decoration: none;
     & * {
-        color: $red;
+        color: $lured;
     }
     &:hover {
-        color: $red;
-        text-decoration: underline;
+        color: #61002a !important;
+        // text-decoration: underline;
+        text-decoration: none;
     }
 }
 %link-dark {
@@ -24,7 +25,8 @@ $y-medium: 1.0rem;
     }
     &:hover {
         color: $black;
-        text-decoration: underline;
+        // text-decoration: underline;
+        text-decoration: none;
     }
 }
 %table-cell {
@@ -37,6 +39,8 @@ $y-medium: 1.0rem;
 * {
     color: $black;
     font-family: "Inconsolata";
+    // font-family: 'Montserrat', sans-serif;;
+    // font-family: "sans serif";
     line-height: 1.2;
 }
 .container {
@@ -49,6 +53,35 @@ $y-medium: 1.0rem;
 .nav-link {
     @extend %link-default;
 }
+
+hr {
+    margin: 0;
+
+}
+
+hr.luisen-yellow {
+    // position: absolute;
+    // top: -48px;
+    left: 0;
+    border: 4px solid $luyellow;
+    width: 89%;
+}
+hr.luisen-red {
+    // position: absolute;
+    // top: -36px;
+    left: 0;
+    border: 4px solid $lured;
+    width: 90%;
+}
+hr.luisen-blue {
+    // position: absolute;
+    // top: -24px;
+    left: 0;
+    border: 4px solid $lublue;
+    width: 88%;
+}
+
+
 #content {
     a {
         @extend %link-default;
